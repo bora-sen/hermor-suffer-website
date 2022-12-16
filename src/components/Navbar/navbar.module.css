@@ -1,0 +1,36 @@
+.navbar {
+    margin: 2rem 0;
+}
+.brand {
+    font-family: GreatWorrior;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4.9rem;
+    text-align : center;
+    color : var(--primary-red)
+}
+.menu_el{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_li{
+    text-decoration: none;
+    list-style: none;
+}
+.menu_li:not(:last-child){
+    margin-right: 4rem;
+} 
+.anchors {
+    text-decoration: none;
+    color: var(--primary-yellow)
+}
+
+@media (max-width: 800px){
+    .brand {
+        font-size: 3rem;
+    }
+    .menu_li:not(:last-child){
+        margin-right: 2rem;
+    } 
+  }

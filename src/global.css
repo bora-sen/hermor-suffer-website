@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Chomsky;
+  src: url('./fonts/chomsky-webfont.woff');
+}
+@font-face {
+  font-family: GreatWorrior;
+  src: url('./fonts/GreatWarriorPersonaluse.woff');
+}
+@font-face {
+  font-family: Namu;
+  src: url('./fonts/NAMU-1400.woff');
+}
+
+
+*{
+  padding : 0;
+  margin : 0;
+  box-sizing : border-box;
+}
+.container {
+  max-width : 1280px;
+  margin: 0 auto;
+}
+
+body{
+  background-color : var(--primary-black);
+  background-image: url('./images/conic.svg');
+}
+
+@media (max-width: 800px){
+  .container{
+    max-width: 100%;
+    margin : 0;
+  }
+}
