@@ -1,37 +1,10 @@
 import React from 'react'
 import localstyle from './productlist.module.css'
+import dataset from '../../dataset.json'
 
 function ProductList() {
-    const products = [
-        {
-            id:0,
-            title:"Test Title",
-            code:"25254",
-            img_url:"https://loremflickr.com/1000/1000/5",
-            red_url:"https://instagram.com/senkisibora"
-        },
-        {
-            id:0,
-            title:"Test Title",
-            code:"25254",
-            img_url:"https://loremflickr.com/1000/1000/5",
-            red_url:"https://instagram.com/senkisibora"
-        },
-        {
-            id:0,
-            title:"Test Title",
-            code:"25254",
-            img_url:"https://loremflickr.com/1000/1000/5",
-            red_url:"https://instagram.com/senkisibora"
-        },
-        {
-            id:0,
-            title:"Test Title 2",
-            code:"313131",
-            img_url:"https://loremflickr.com/1000/1000/6",
-            red_url:"https://instagram.com/photobybora"
-        }
-    ];
+    console.log(dataset.products);
+    const products = dataset.products;
   return (
     <section>
         <h2 className={localstyle.products_title}>New Products</h2>
@@ -45,7 +18,7 @@ function ProductList() {
                                 <h5 className={localstyle.prod_code}>{product.code}</h5>
                             </div>
                             <div className={localstyle.prod_card_img}>
-                                <img src={product.img_url} alt="Image" />
+                                <img src={product.img_url} alt="Product" />
                             </div>
                         </div>
                     )

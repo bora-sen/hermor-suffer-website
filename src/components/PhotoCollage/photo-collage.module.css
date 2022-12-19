@@ -37,6 +37,11 @@
     max-height: 500px;
 }
 
+.quote_section{
+    color: red;
+    text-align: center;
+}
+
 @media (max-width:800px){
     .images {
         flex-direction: column;

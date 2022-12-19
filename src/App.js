@@ -1,16 +1,15 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar/Navbar'
-import PhotoCollage from './components/PhotoCollage/PhotoCollage';
-import ProductList from './components/ProductList/ProductList';
+import Home from './pages/Home';
+import Product from './pages/Product';
+
 
 function App() {
   return (
-      <main className="container">
-        <Navbar />
-        <PhotoCollage />
-        <ProductList />
-      </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/product" element={<Product />} />
+    </Routes>
   );
 }
 

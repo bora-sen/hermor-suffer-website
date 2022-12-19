@@ -1,3 +1,30 @@
 .footer{
-    background-color : blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--footer-background);
+}
+section.info{
+    color:var(--primary-gray);
+    text-align: center;
+    background-color: black;
+    margin-top:.55rem;
+}
+.brand{
+    color : var(--primary-yellow);
+    font-size: 2.3rem;
+    font-family: GreatWorrior;
+}
+.links{
+    display: flex;
+    color: var(--primary-red);
+}
+.navheader{
+    text-align: center;
+    color: var(--primary-yellow);
+}
+@media (max-width : 768px){
+    .footer{
+        flex-direction: column;
+    }
 }

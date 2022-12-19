@@ -1,25 +1,25 @@
-import localstyle from './photo-collage.module.css'
-import React from 'react'
+import localstyle from './photo-collage.module.css';
+import React from 'react';
+import dataset from '../../dataset.json'
 
 function PhotoCollage() {
-    const collagePhotos = [
-    {id:1,image_url:"https://loremflickr.com/1000/1000/1"},
-    {id:2,image_url:"https://loremflickr.com/1000/1000/2"},
-    {id:3,image_url:"https://loremflickr.com/1000/1000/3"}
-    ];
+    const collagePhotos = dataset.categories;
     
   return (
     <section>
       <div className={localstyle.images}>
         <div className={localstyle.image_div}>
-          <img src={collagePhotos[0].image_url} alt="Image Left"/>
+          <img src={collagePhotos[0].img_url} alt="Left"/>
         </div>
         <div className={localstyle.image_div}>
-          <img src={collagePhotos[1].image_url} alt="Image Center"/>
+          <img src={collagePhotos[1].img_url} alt="Center"/>
         </div>
         <div className={localstyle.image_div}>
-          <img src={collagePhotos[2].image_url} alt="Image Right"/>
+          <img src={collagePhotos[2].img_url} alt="Right"/>
         </div>
+      </div>
+      <div className={localstyle.quote_section}>
+        <h3 className={localstyle.quote}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum nesciunt dicta</h3>
       </div>
     </section>
   )
