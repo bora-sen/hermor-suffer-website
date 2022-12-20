@@ -13,13 +13,15 @@ function ProductList() {
                 {products.map(product => {
                     return (
                         <div className={localstyle.prod_card}>
-                            <div className={localstyle.info}>
-                                <h4 className={localstyle.prod_title}>{product.title}</h4>
-                                <h5 className={localstyle.prod_code}>{product.code}</h5>
-                            </div>
-                            <div className={localstyle.prod_card_img}>
-                                <img src={product.img_url} alt="Product" />
-                            </div>
+                            <a href={product.red_url}>
+                                <div className={localstyle.info}>
+                                    <h4 className={localstyle.prod_title}>{product.title}</h4>
+                                    <h5 className={localstyle.prod_code}>{product.code}</h5>
+                                </div>
+                                <div className={localstyle.prod_card_img}>
+                                    <img src={product.img_url} alt="Product" />
+                                </div>
+                            </a>
                         </div>
                     )
                 })}

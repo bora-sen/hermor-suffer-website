@@ -17,12 +17,18 @@ section.info{
 }
 .links{
     display: flex;
-    color: var(--primary-red);
+    list-style: none;
 }
 .navheader{
     text-align: center;
     color: var(--primary-yellow);
 }
+.links a{
+    color: var(--primary-yellow);
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
 @media (max-width : 768px){
     .footer{
         flex-direction: column;
