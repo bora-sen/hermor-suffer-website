@@ -6,7 +6,7 @@ function Footer() {
     <>
       <section className={localstyle.footer}>
         <div className={localstyle.brand}>
-          <p>HERMOR SUFFER</p>
+          <p>HERMOR SUFFER </p>
         </div>
         <ul className={localstyle.links}>
           <li className={localstyle.link}><a href="/">Home</a></li>
