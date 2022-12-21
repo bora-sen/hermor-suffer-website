@@ -1,0 +1,76 @@
+.product_details {
+    display: flex;
+    margin: 2rem 2rem;
+}
+.image_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width : 60%;
+    max-height: 55rem;
+}
+
+.image_div img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    width: 40%;
+}
+
+
+.title {
+    color: red;
+    margin-top: 1rem;
+    font-family: GreatWorrior;
+    font-size: 3rem;
+}
+.type {
+    color:burlywood;
+    margin-bottom: 2rem;
+    margin-left: 1.2rem;
+    font-family: NAMU;
+}
+.description {
+    color: aqua;
+    font-family: Chomsky;
+    font-size: 2rem;
+}
+.redirect_button {
+    display: inline-block;
+    background-color: aqua;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-family: NAMU;
+}
+.redir_div {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:800px){
+    .product_details {
+        flex-direction: column;
+    }
+    .details {
+        width: 100%;
+    }
+    .image_div {
+        max-width: 100%;
+        max-height: 40rem;
+    }
+    .redir_div {
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+}
