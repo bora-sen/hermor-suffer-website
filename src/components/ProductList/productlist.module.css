@@ -8,17 +8,15 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    max-width : 400px;
-    max-height: 500px;
+    max-width : 450px;
+    max-height: 450px;
     margin : 2rem 2rem;
 
 }
 
 .prod_card_img img{
-    flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-
 }
 .prod_card_img:hover{
     filter:brightness(90%);
@@ -34,6 +32,7 @@
 }
 
 .prod_title {
+    margin-top: 4rem;
     font-size: 3rem;
     color : var(--primary-yellow);
     font-family: Namu;
@@ -50,7 +49,7 @@
     font-family: 'Chomsky';
 }
 
-@media (max-width:800px){
+@media (max-width:768px){
     .products_title {
         font-size:4rem;
     }
