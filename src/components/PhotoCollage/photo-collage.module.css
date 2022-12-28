@@ -12,3 +12,10 @@
     min-width: 100%;
     min-height: 100%;
 }
+.welcome{
+    margin-top: .74rem;
+    text-align: center;
+    font-family: Chomsky;
+    color: var(--primary-red);
+    font-size: 1.6rem;
+}

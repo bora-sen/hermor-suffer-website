@@ -1,7 +1,8 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
-import Product from './pages/Product';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage.jsx';
+import Product from './pages/Product.jsx';
 
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/product" element={<Product />} />
+      <Route path='*' element={<Navigate replace to="/404" />} />
+      <Route path='/404' element={<NotFoundPage />} />
     </Routes>
   );
 }

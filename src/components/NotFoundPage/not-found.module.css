@@ -1,0 +1,28 @@
+.background{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: GreatWorrior;
+    color: red;
+}
+.Text{
+    color: var(--primary-red);
+    font-size: 8rem;
+}
+.Text2{
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--primary-yellow);
+}
+@media (max-width:768px){
+    .Text{
+        font-size: 3rem;
+    }
+    .Text2{
+        font-size: 2rem;
+    }
+
+}

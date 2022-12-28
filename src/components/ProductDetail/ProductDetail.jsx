@@ -4,8 +4,6 @@ import style from './product-detail.module.css';
 function ProductDetail() {
   let database = require('../../dataset.json');
   let product = database.products[0];
-  console.table(product);
-  console.log(this.params);
 
   return (
     <section className={style.product_details}>
@@ -20,7 +18,6 @@ function ProductDetail() {
             <a href={product.red_url} className={style.redirect_button}>Redirect To Page</a>
             </div>
         </div>
-
     </section>
   )
 }

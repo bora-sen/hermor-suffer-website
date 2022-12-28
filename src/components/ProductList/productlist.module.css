@@ -18,8 +18,9 @@
     min-width: 100%;
     min-height: 100%;
 }
-.prod_card_img:hover{
+.prod_card_img img:hover{
     filter:brightness(90%);
+    scale: 1.2;
 }
 
 .product_card{

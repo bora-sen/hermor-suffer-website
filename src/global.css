@@ -27,7 +27,7 @@ body{
   background-image: url('./images/conic.svg');
 }
 
-@media (max-width: 768px){
+@media (max-width: var(--small-breaking-point)){
   .container{
     max-width: 100%;
     margin : 0;

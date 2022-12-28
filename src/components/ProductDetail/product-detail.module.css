@@ -58,7 +58,7 @@
     margin-right: auto;
 }
 
-@media (max-width:800px){
+@media (max-width:var(--small-breaking-point)){
     .product_details {
         flex-direction: column;
     }

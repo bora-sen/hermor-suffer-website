@@ -4,4 +4,7 @@
   --primary-red : #fe2107;
   --primary-gray: gray;
   --footer-background : var(--primary-black);
+
+
+  --small-breaking-point: 768px;
 }

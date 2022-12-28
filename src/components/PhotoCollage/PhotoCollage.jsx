@@ -9,6 +9,7 @@ function PhotoCollage() {
         <source src='http://bborasen.com/video/hermor-video3.mp4' />
         </video> 
       </div>
+      <h2 className={localstyle.welcome}>Welcome To Official HERMORSUFFER Website</h2>
     </section>
   )
 }
