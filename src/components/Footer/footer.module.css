@@ -10,6 +10,7 @@ section.info{
     text-align: center;
     background-color: black;
     margin-top:.55rem;
+    font-size: .75rem;
 }
 .brand{
     color : var(--primary-yellow);

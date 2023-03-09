@@ -15,7 +15,7 @@ function Footer() {
         </ul>
       </section>
       <section className={localstyle.info}>
-        <p>© 2022 HERMORSUFFER TR, Inc. All rights reserverd.</p>
+        <p>© 2023 HERMORSUFFER TR, Inc. All rights reserverd.</p>
       </section>
     </>
   )
