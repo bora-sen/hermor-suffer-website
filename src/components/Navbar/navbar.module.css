@@ -1,13 +1,13 @@
-.navbar {
-    margin: 2rem 0;
-}
+
 .brand {
     font-family: GreatWorrior;
     font-weight: normal;
     font-style: normal;
     font-size: 4.9rem;
     text-align : center;
-    color : var(--primary-red)
+    color : var(--primary-red);
+    padding-top: 2rem;
+
 }
 .menu_el{
     display: flex;

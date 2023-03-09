@@ -3,7 +3,7 @@ import localstyle from './navbar.module.css'
 
 function Navbar() {
   return (
-    <nav className={localstyle.navbar}>
+    <nav>
       <h1 className={localstyle.brand}>HERMOR SUFFER</h1>
     </nav>
   )
