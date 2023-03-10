@@ -1,6 +1,7 @@
 import React from 'react'
 import localstyle from './productlist.module.css'
 import dataset from '../../dataset.json'
+import Reveal from 'react-reveal/Fade'
 
 function ProductList() {
     const products = dataset.products;
@@ -12,6 +13,7 @@ function ProductList() {
             <div className={localstyle.products}>
                 {products.map(product => {
                     return (
+                        <Reveal bottom>
                         <div className={localstyle.prod_card} key={product.id}>
                             <a href={product.red_url}>
                                 {/* 
@@ -26,6 +28,7 @@ function ProductList() {
                                 </div>
                             </a>
                         </div>
+                        </Reveal>
                     )
                 })}
             </div>
